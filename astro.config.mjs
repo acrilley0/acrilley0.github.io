@@ -4,5 +4,5 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   devToolbar: { enabled: false },
-  site: 'acrilley0.github.io',
+  site: 'https://acrilley0.github.io',
 });
