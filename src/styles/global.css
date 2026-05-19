@@ -18,6 +18,11 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  /* text-decoration: underline; */
+}
+
+.projects-title {
+  text-decoration: underline;
 }
 
 div h1 {
@@ -100,5 +105,4 @@ div h1 {
 .projects {
   display: grid;
   justify-content: center;
-  gap: 20px;
 }

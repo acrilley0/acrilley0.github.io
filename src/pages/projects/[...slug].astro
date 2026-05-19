@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import SocialsBar from '../../components/SocialsBar.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout>
+  <Nav />
+  <h1>{entry.data.title}</h1>
+  <Content />
+  <SocialsBar />
+</Layout>
+
+<style>
+  :global(h2) {
+    text-align: center;
+  }
+  :global(h3) {
+    text-align: center;
+  }
+</style>
