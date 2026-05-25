@@ -1,6 +1,7 @@
 html {
-  background-color: #f1f5f9;
-  font-family: "JetBrains Mono";
+  background-color: #3a3b3c;
+  font-family: "JetBrainsMono Nerd Font";
+  color: white;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
-  /* text-decoration: underline; */
 }
 
 .projects-title {
@@ -37,7 +37,6 @@ div h1 {
   width: fit-content;
   margin: 0;
   font-weight: bold;
-  background-color: #42f57b;
   overflow: hidden;
 }
 
